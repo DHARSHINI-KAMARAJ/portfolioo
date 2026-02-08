@@ -39,10 +39,10 @@ window.addEventListener("scroll", () => {
   sections.forEach(sec => {
     const top = window.scrollY;
     const offset = sec.offsetTop - window.innerHeight + 100;
+
     if (top >= offset) {
       sec.style.opacity = 1;
       sec.style.transform = "translateY(0)";
     }
   });
 });
-
