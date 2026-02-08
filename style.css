@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0b0f1a;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 span {
+  color: #00c6ff;
+}
+
+.hero-text h2 {
+  margin: 15px 0;
+  color: #b0b0b0;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 22px;
+  margin-right: 10px;
+  border-radius: 25px;
+  background: #00c6ff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #00c6ff;
+  color: #00c6ff;
+}
+
+.hero-img {
+  position: relative;
+}
+
+.hero-img img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00c6ff;
+  box-shadow: 0 0 35px rgba(0,198,255,0.8);
+  z-index: 2;
+  transition: transform 0.4s ease;
+}
+
+.hero-img img:hover {
+  transform: scale(1.05);
+}
+
+.hero-img .ring {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px dashed rgba(0,198,255,0.6);
+  top: -20px;
+  left: -20px;
+  animation: rotate 14s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+section {
+  padding: 70px 15%;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+h2 {
+  color: #00c6ff;
+  margin-bottom: 20px;
+}
+
+.skills .bar {
+  background: #1f2437;
+  border-radius: 20px;
+  margin: 10px 0 25px;
+}
+
+.skills .bar div {
+  height: 10px;
+  background: #00c6ff;
+  border-radius: 20px;
+}
+
+.card {
+  background: #131a33;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 18px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #00c6ff;
+}
+
+.tech {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.timeline {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: #00c6ff;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #05070d;
+  color: #aaa;
+}
+
+a {
+  color: #00c6ff;
+  text-decoration: none;
+}
