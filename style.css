@@ -12,13 +12,14 @@ body {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;   /* was 100vh */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 40px;
+  padding: 40px 40px 20px; /* bottom padding reduced */
   flex-wrap: wrap;
 }
+
 
 .hero-text h1 span {
   color: #00c6ff;
@@ -85,10 +86,10 @@ body {
 }
 
 section {
-  padding: 70px 15%;
+  padding: 40px 15%;   /* reduced from 70px */
   opacity: 0;
-  transform: translateY(40px);
-  transition: 0.8s ease;
+  transform: translateY(30px);
+  transition: 0.6s ease;
 }
 
 h2 {
@@ -151,3 +152,8 @@ a {
   color: #00c6ff;
   text-decoration: none;
 }
+.about {
+  margin-top: -30px;  /* pulls section upward */
+}
+
+
